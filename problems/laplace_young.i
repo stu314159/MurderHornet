@@ -3,6 +3,7 @@
   dim = 2
   nx = 20
   ny = 20
+  uniform_refine = 2
 []
 
 [Variables]
@@ -24,7 +25,7 @@
 
 [BCs]
   [all]
-    type = ADNeumannBC
+    type = ADLaplaceYoungNeumannBC
     variable = u
     value = 0.2
     boundary = "left right top bottom"
