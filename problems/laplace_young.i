@@ -3,7 +3,7 @@
   dim = 2
   nx = 20
   ny = 20
-  uniform_refine = 2
+  uniform_refine = 4
 []
 
 [Variables]
@@ -19,7 +19,7 @@
   [source]
     type = LaplaceYoungSource
     variable = u
-    kappa = 0.9
+    kappa = 1.0
   []
 []
 
