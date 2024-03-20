@@ -32,6 +32,7 @@ ADLaplaceYoungNeumannBC::ADLaplaceYoungNeumannBC(const InputParameters & paramet
 ADReal
 ADLaplaceYoungNeumannBC::computeQpResidual()
 {
-  ADReal k = std::sqrt(1 + _grad_u[_qp] * _grad_u[_qp]);
-  return -_test[_i][_qp] * _value * k;
+//  ADReal k = std::sqrt(1 + _grad_u[_qp] * _grad_u[_qp]);
+//  return -_test[_i][_qp] * _value * k;
+    return -_test[_i][_qp]*_value;
 }
